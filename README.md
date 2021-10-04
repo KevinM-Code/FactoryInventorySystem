@@ -18,4 +18,4 @@ statements to develop your application.
 
 This application was created based on the requirements documentation.
 
-
+HTML documentation for the project code is being hosted [here](https://kevinm-code.github.io/FactoryInventorySystem/)
