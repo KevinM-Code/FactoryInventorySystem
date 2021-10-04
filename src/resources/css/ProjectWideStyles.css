@@ -1,0 +1,40 @@
+/* css variables and color scheme*/
+
+* {
+    -fx-blue_green: #2b2d42;
+    -fx-waterway: #537072;
+    -fx-haze: #8d99ae;
+    -fx-smog: #edf2f4;
+}
+
+.screenTitle {
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 32;
+    -fx-text-fill: -fx-blue_green;
+}
+
+.defaultScreenBackground {
+    -fx-background-color: -fx-smog;        
+}
+
+.anyChangeInvButton {
+    -fx-background-color:  -fx-blue_green; 
+    -fx-background-radius: 10 10 10 10;
+    -fx-text-fill: white;
+    
+        
+}
+
+.anyChangeInvButton:hover {
+    -fx-background-color:  -fx-haze; 
+    -fx-background-radius: 10 10 10 10; 
+    -fx-text-fill: -fx-blue_green;    
+}
+
+.addPartsToProdMsg {
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-text-fill: -fx-blue_green;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="498.0" styleClass="defaultScreenBackground" stylesheets="@../css/ProjectWideStyles.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.controller.PartInvScreenController">
+   <children>
+      <JFXRadioButton fx:id="partInHouseRadBtn" layoutX="264.0" layoutY="44.0" text="In-House" />
+      <JFXRadioButton fx:id="partOutsrcRadBtn" layoutX="366.0" layoutY="44.0" text="Outsourced" />
+      <Label fx:id="partScreenTitle" layoutX="33.0" layoutY="29.0" styleClass="screenTitle" text="Add Part" />
+      <Label layoutX="69.0" layoutY="112.0" text="ID" />
+      <Label layoutX="69.0" layoutY="160.0" text="Name" />
+      <Label layoutX="69.0" layoutY="205.0" text="Inv" />
+      <Label layoutX="69.0" layoutY="252.0" text="Price/Cost" />
+      <Label layoutX="69.0" layoutY="301.0" text="Max" />
+      <Label fx:id="partCompNameOrMachIdLabel" layoutX="69.0" layoutY="370.0" text="Company Name" />
+      <Label layoutX="311.0" layoutY="301.0" text="Min" />
+      <JFXTextField fx:id="partIdTextField" disable="true" layoutX="186.0" layoutY="108.0" text="Auto Gen - Disabled" />
+      <JFXTextField fx:id="partNameTextField" focusColor="BLACK" labelFloat="true" layoutX="186.0" layoutY="156.0" promptText="Part Name" />
+      <JFXTextField fx:id="partInvTextField" focusColor="BLACK" labelFloat="true" layoutX="186.0" layoutY="201.0" promptText="Inv" />
+      <JFXTextField fx:id="partPriceDivCostTextField" focusColor="BLACK" labelFloat="true" layoutX="186.0" layoutY="248.0" promptText="Price/Cost" />
+      <JFXTextField fx:id="partMaxTextField" focusColor="BLACK" labelFloat="true" layoutX="186.0" layoutY="297.0" prefHeight="25.0" prefWidth="93.0" promptText="Max" />
+      <JFXTextField fx:id="partMinTextField" focusColor="BLACK" labelFloat="true" layoutX="353.0" layoutY="297.0" prefHeight="25.0" prefWidth="93.0" promptText="Min" />
+      <JFXTextField fx:id="partCompNameOrMachIdTextField" focusColor="BLACK" labelFloat="true" layoutX="186.0" layoutY="366.0" promptText="Company Name" />
+      <JFXButton fx:id="addPartSaveBtn" buttonType="RAISED" layoutX="245.0" layoutY="422.0" onMouseClicked="#addPart" prefHeight="34.0" prefWidth="68.0" styleClass="anyChangeInvButton" text="Save" />
+      <JFXButton fx:id="partCxlBtn" buttonType="RAISED" layoutX="340.0" layoutY="422.0" onMouseClicked="#cxlPartWin" prefHeight="34.0" prefWidth="68.0" styleClass="anyChangeInvButton" text="Cancel" />
+      <JFXButton fx:id="modPartSaveBtn" buttonType="RAISED" layoutX="245.0" layoutY="422.0" onMouseClicked="#modifyPart" prefHeight="34.0" prefWidth="68.0" styleClass="anyChangeInvButton" text="Save" visible="false" />
+      <Label fx:id="maxTextFieldErrorMessage" layoutX="25.0" layoutY="334.0" textFill="RED">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="1118.0" styleClass="defaultScreenBackground" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.controller.MainScreenController">
+    <stylesheets>
+        <URL value="@../css/MainScreen.css" />
+        <URL value="@../css/ProjectWideStyles.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="40.0" layoutY="48.0" styleClass="screenTitle" text="Inventory Management System" />
+      <Pane layoutX="40.0" layoutY="138.0" prefHeight="421.0" prefWidth="511.0" styleClass="tableViewPane">
+         <children>
+              <TableView fx:id="mainScreenPartsTableView" layoutX="7.0" layoutY="79.0" prefHeight="264.0" prefWidth="497.0" styleClass="mainScreenTableViews">
+                  <columns>
+                      <TableColumn fx:id="partId" prefWidth="90.0" text="Part ID" />
+                      <TableColumn fx:id="partName" prefWidth="140.0" text="Part Name" />
+                      <TableColumn fx:id="partsInvLevel" prefWidth="100.0" text="Inventory Level" />
+                      <TableColumn fx:id="priceDivCostPerUnit" prefWidth="130.0" text="Price/Cost per Unit" />               
+                  </columns>
+              </TableView>
+            <Label layoutX="14.0" layoutY="20.0" styleClass="inventoryTypeLabel" text="Parts" />
+            <JFXButton buttonType="RAISED" layoutX="201.0" layoutY="23.0" onMouseClicked="#partsSearch" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Search" />
+            <JFXTextField fx:id="mainScreenPartsSearchTextField" focusColor="BLACK" labelFloat="true" layoutX="300.0" layoutY="26.0" prefHeight="26.0" prefWidth="190.0" promptText="Part Name or ID" styleClass="mainScreenTextField" />
+            <JFXButton fx:id="mainScreenPartsAddButton" buttonType="RAISED" layoutX="218.0" layoutY="360.0" onMouseClicked="#addPart" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Add" />
+            <JFXButton fx:id="mainScreenPartsModifyButton" buttonType="RAISED" layoutX="313.0" layoutY="360.0" onMouseClicked="#modifyPart" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Modify" />
+            <JFXButton buttonType="RAISED" layoutX="408.0" layoutY="360.0" onMouseClicked="#deletePart" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Delete" />
+         </children>
+      </Pane>
+      <Pane  layoutX="579.0" layoutY="138.0" prefHeight="421.0" prefWidth="511.0" styleClass="tableViewPane">
+         <children>
+            <TableView fx:id="mainScreenProductsTableView" layoutX="7.0" layoutY="79.0" prefHeight="264.0" prefWidth="497.0" styleClass="mainScreenTableViews">
+               <columns>
+                  <TableColumn fx:id="prodId" prefWidth="90.0" text="Product ID" />
+                  <TableColumn fx:id="prodName" prefWidth="140.0" text="Product Name" />
+                  <TableColumn fx:id="prodInvLevel" prefWidth="100.0" text="Inventory Level" />
+                  <TableColumn fx:id="prodPricePerUnit" prefWidth="130.0" text="Price per Unit" />
+               </columns>
+            </TableView>
+            <Label layoutX="22.0" layoutY="22.0" styleClass="inventoryTypeLabel" text="Products" />
+            <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="24.0" onMouseClicked="#productsSearch" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Search" />
+            <JFXTextField fx:id="mainScreenProductsSearchTextField" focusColor="BLACK" labelFloat="true" layoutX="295.0" layoutY="28.0" prefHeight="26.0" prefWidth="190.0" promptText="Part Name or ID" styleClass="mainScreenTextField" />
+            <JFXButton fx:id="mainScreenProductsAddButton" buttonType="RAISED" layoutX="213.0" layoutY="359.0" onMouseClicked="#addProducts" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Add" />
+            <JFXButton fx:id="mainScreenProductsModifyButton" buttonType="RAISED" layoutX="308.0" layoutY="359.0" onMouseClicked="#modifyProducts" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Modify" />
+            <JFXButton buttonType="RAISED" layoutX="403.0" layoutY="359.0" onMouseClicked="#deleteProducts" prefHeight="32.0" prefWidth="82.0" styleClass="mainScreenButton" text="Delete" />
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="973.0" layoutY="585.0" onMouseClicked="#exitApp" prefHeight="42.0" prefWidth="101.0" styleClass="mainScreenButton" text="Exit" />
+    </children>
+   
+</AnchorPane>

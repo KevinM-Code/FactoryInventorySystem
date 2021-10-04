@@ -1,0 +1,51 @@
+/* css variables and color scheme*/
+
+* {
+    -fx-blue_green: #2C4A52;    
+    -fx-waterway: #537072;
+    -fx-haze: #8E9B97;   
+    -fx-smog: #F4EBDB;
+}
+
+.inventoryTypeLabel {
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 22;
+    -fx-text-fill: -fx-smog;
+    -fx-background-color:  -fx-blue_green; 
+    -fx-background-radius: 10 10 10 10;
+    -fx-padding: 3 3 3 3;
+        
+}
+
+.mainScreenButton {
+    -fx-background-color:  -fx-blue_green; 
+    -fx-background-radius: 10 10 10 10;
+    -fx-text-fill: white;    
+        
+}
+
+.mainScreenButton:hover {
+    -fx-background-color:  -fx-smog; 
+    -fx-background-radius: 10 10 10 10; 
+    -fx-text-fill: -fx-blue_green;    
+}
+
+.mainScreenTableViews {
+    -fx-background-color:  -fx-smog;    
+}
+
+.tableViewPane {
+    -fx-background-color:  -fx-haze; 
+    -fx-background-radius: 20 20 20 20;    
+}
+
+.mainScreenTextField {
+    -fx-background-color:  -fx-smog;
+    -fx-background-radius: 5 5 5 5; 
+    
+}
+
+
+
+
